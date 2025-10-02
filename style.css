@@ -1,0 +1,13 @@
+body {
+    background-color: darkkhaki;
+    font-family: 'Arial', Times, serif, sans-serif;
+    font-size: 100%;
+    padding: 1 em;
+}
+.base_color {
+    color: navy;
+}
+img {
+    width: 600px;
+    height: auto;
+}
