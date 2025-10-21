@@ -2,12 +2,23 @@ body {
     background-color: darkkhaki;
     font-family: 'Arial', Times, serif, sans-serif;
     font-size: 100%;
-    padding: 1 em;
 }
 .base_color {
     color: navy;
 }
+
+a {font-weight: bolder;}
+a:link {color: #0000ff}
+a:visited {color:#ff4500}
+a:hover, a:focus {color:#228b22}
+
+ul>li::first-letter {
+    font-weight: bolder;
+    color: rgba(99, 0, 65, .8)}
+h2+ol {
+    margin: 0;
+}
 img {
-    width: 600px;
+    width: 25%;
     height: auto;
 }
