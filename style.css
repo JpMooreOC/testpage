@@ -42,6 +42,7 @@ footer {
 
 article {
     max-width: 750px;
+    padding: .5em;
 }
 
 p {
