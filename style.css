@@ -1,24 +1,166 @@
+/*Lot's of things added and changed here in my CSS.  Mainly added a lot of id and class selectors.  Added CSS for my navigation menu, and spent considerable amount of time editing my HTML and CSS when things didn't work right!*/
 body {
-    background-color: darkkhaki;
+    background-color: #af0101;
     font-family: 'Arial', Times, serif, sans-serif;
     font-size: 100%;
-}
-.base_color {
-    color: navy;
+    margin: 0em;
+    padding: 0em;
 }
 
-a {font-weight: bolder;}
-a:link {color: #0000ff}
-a:visited {color:#ff4500}
-a:hover, a:focus {color:#228b22}
-
-ul>li::first-letter {
-    font-weight: bolder;
-    color: rgba(99, 0, 65, .8)}
-h2+ol {
-    margin: 0;
+header {
+    padding-left: 3em;
 }
+
+main {
+    color: #10f2a3;
+    padding-left: 3em;
+}
+
+#logo {
+    width: 20%;
+    margin-top: 1em;
+    margin-left: 9.5em;
+}
+
+footer {
+    clear: both;
+    padding-left: 3em;
+    padding-top: 3em;
+    font-size: 95%;
+    color:#10f2a3;
+}
+
+.heading {
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.subheading {
+    padding-bottom: .25em;
+}
+
+article {
+    max-width: 750px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.articlepic {
+    float: right;
+    width: 50%;
+    padding: .5em;
+}
+
+#vg1-pic {
+    max-height: 300px;
+    width: auto;
+}
+
+#foley-gif {
+    width: 20%;
+}
+
 img {
+    clear: both;
+    width: 50%;
+    padding: .5em .5em .5em 0em
+}
+
+#psyche {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 250%
+}
+
+#us {
+    float: left;
     width: 25%;
-    height: auto;
+    padding: 0em .75em .75em 0em;
+}
+
+#real-container {
+    padding-left: .75em;
+    padding-top: 2em;
+    border-left: 2px dashed #10f2a3;
+    overflow: auto;
+}
+
+#hobbies {
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: .25em;
+
+}
+
+h2,
+ol,
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+ol li {
+    padding-bottom: .75em;
+}
+
+ul li {
+    padding-bottom: .75em;
+}
+
+#real {
+    font-size: 200%;
+    padding-bottom: .25em;    
+}
+
+a {
+    font-weight: bolder;
+}
+
+.foley:link {
+    color: #0000ff !important;
+}
+
+.foley:visited {
+    color: #ff00d0 !important;
+}
+
+.foley:hover, #foley:focus {
+    color: #228b22 !important;
+    font-size: 105% !important; 
+}
+
+#nav_menu ul {
+    list-style-type: none;
+}
+
+#nav_menu ul li{
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0em;
+    text-decoration: none;
+    background-color:#10f2a3;
+    color:#da0707;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 5px #000000;
+}
+#nav_menu ul li a.current {
+    background-color:#7bf8cc;
+    color: #ff00d0;
+}
+
+#nav_menu ul li a:hover {
+    background-color:#0a8e60;
+    color:#930404;  
 }

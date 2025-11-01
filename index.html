@@ -6,39 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Here's My Super Awesome Page!!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="JandT.png">
 </head>
 <body>
-    <!-- Some of the required elements for week 3 assignment were already in this document from week 2's homework assignment-->
+    <!--Significant Changes Made, beginning with the Header and Logo-->
     <header>
-        <h1 class="base_color"> My Name is James</h1>
+        <img src="JandT.png" id="logo" alt="Logo">
     </header>
     <main>
-        <h2 class="base_color">Pretty Sweet James Facts:</h2>
+        <br>
+    <!--Navigation Menu Added, with new webpages-->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="crabbing.html">Crabbing</a></li>
+                <li><a href="electrician.html">Electrician</a></li>
+                <li><a href="videogames.html">Video Games</a></li>
+                <li><a href="tvandmovies.html">TV and Movies</a></li>
+            </ul>
+        </nav>
+        <h1 class="heading"> My Name is James</h1>
+        <h2 class="subheading">Pretty Sweet James Facts:</h2>
         <ol>
             <li>I'm 35 years old</li>
             <li>I'm thrice divorced</li>
-            <li><a href="foley.html">I LIVE IN A VAN DOWN BY THE RIVER!!!</a></li>
+            <li><a href="foley.html" class="foley">I LIVE IN A VAN DOWN BY THE RIVER!!!</a></li>
         </ol>
-        <p>PSYCHE!!...Just Kidding</p>
+        <p id="psyche">PSYCHE!!...Just Kidding</p>
         <br>
-        <h2 class="base_color">The Real Facts Are:</h2>
-        <ul>
-            <li>I'm actually 39 years old</li>
-            <li>I was NEVER divorced</li>
-            <li>I'm Married to My Hot Rockin' Wife</li>
-            <li>I Love My Wife and Kids</li>
-            <li>We love to go crabbing</li>
-            <li>I Love MMA and Boxing</li>
-            <li>I'm A Big Fan of Pretty Much All Things Nintendo</li>
-            <li>I Love Going to Church with My Family</li>
-        </ul>
-        <br>
-        <br>
-        <img src="us.JPG" alt="Just us">
+        <img src="us.JPG" alt="Just us" id="us">
+    <!--Major Structural Improvement made, div tag allows image float and add a border correctly-->
+    <div id="real-container">    
+        <h2 id="real">The REAL Facts Are:</h2>
+            <ul>
+                <li>I'm actually 39 years old</li>
+                <li>I was NEVER divorced</li>
+                <li>I'm Married to My Hot Rockin' Wife</li>
+                <li>I Love My Wife and Kids</li>
+                <li>I've Been an Electrician for Over 20 Years!</li>
+                <li>My Family History is Pretty Unique and Entertaining</li>
+                <li>I Can be Kind of a Food Snob</li>
+                <li>I Like to Lift Weights</li>
+                <li>I love MMA and Boxing</li>
+                <li>I'm a Thrillseeker Adrenaline Junkie, Especially Roller Coasters</li>
+                <li>I Love Going to Church with My Family</li>
+            </ul>
+    </div>
+    <!--Added More Content to All the Lists, and Added "Return to Top" Link-->
+        <h2 id="hobbies">Other Hobbies and Things About Us You Can Explore More About in the Top Menu:</h2>    
+            <ul>
+                <li>We Love to Go Crabbing</li>
+                <li>I'm A Big Fan of Pretty Much All Things Nintendo</li>
+                <li>I do like TV and Movies (If they're Good)</li>
+            </ul>
+            <p><a href="#">Return to Top</a></p>
     </main>
     <footer>
-        <p>&copy; Copyright 2025 James Moore</p>
+        <p>&copy; Copyright 2025 James Moore.</p>
     </footer>
 </body>
 </html>
