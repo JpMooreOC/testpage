@@ -1,4 +1,3 @@
-/*Lot's of things added and changed here in my CSS.  Mainly added a lot of id and class selectors.  Added CSS for my navigation menu, and spent considerable amount of time editing my HTML and CSS when things didn't work right!*/
 body {
     background-color: #690202;
     font-family: 'Arial', Times, serif, sans-serif;
@@ -40,6 +39,17 @@ footer {
     padding-bottom: .25em;
 }
 
+.intro-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;                 
+    padding: 1.5em;
+    max-width: 600px;          
+    margin-top: 1em;
+    margin-bottom: 2em;
+    grid-column: 1 / -1;
+}
+
 article {
     max-width: 750px;
     padding: .5em;
@@ -47,12 +57,6 @@ article {
 
 p {
     line-height: 1.5em;
-}
-
-.articlepic {
-    float: right;
-    width: 50%;
-    padding: .5em;
 }
 
 #vg1-pic {
@@ -143,14 +147,21 @@ a {
     width: 40%;
 }
 
+/* Modified nav bar to be a flexbox */
 #nav_menu ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;            
+    justify-content: space-between;  
+    align-items: center;
 }
 
-#nav_menu ul li{
-    float: left;
-    width: 20%;
+/* Added flexbox properties */
+#nav_menu ul li {
+    flex: 1;       
 }
+
 
 #nav_menu ul li a {
     text-align: center;
@@ -172,7 +183,47 @@ a {
     color:#930404;  
 }
 
-/*Added these media queries AFTER the 1159 deadline, plus did some minor proofreading edits, but hopefully I can still get that extra credit! :) */
+/* Begin new Grid Layout for Info Pages */
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 800px) 1fr;
+    gap: 2em;
+    padding: 1.5em;
+}
+
+.article-grid > * {
+    grid-column: 2;
+}
+
+.article-grid article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25em;
+}
+
+.article-grid .articlepic,
+.article-grid img {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 0;
+}
+
+.article-grid #nav_menu {
+    width: 100%;
+    grid-column: 2;
+}
+
+body.center-logo-page #logo {
+    display: block;
+    margin: 1em auto 0 auto;
+    width: 20%;
+    min-width: 125px;
+    padding-left: 0;
+}
+
+/* End of new CSS for grid layout */
 
 @media only screen and (max-width: 2000px) {
    #logo {
@@ -204,19 +255,22 @@ a {
 }
 }
 
+/* This media query for the nav bar replaces what I originally had at 1450 px */
+
+@media only screen and (max-width: 1430px) {
+    #nav_menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav_menu ul li {
+        flex: none;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1500px) {
    #logo {
     padding-left: 7.9em;
-}
-}
-
-@media only screen and (max-width: 1450px) {
-    #nav_menu ul li{
-    float: none;
-    width: 100%;
-}
-  #logo {
-    padding-left: 7em;
 }
 }
 
