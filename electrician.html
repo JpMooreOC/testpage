@@ -6,46 +6,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrician Stuff</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="JandT.png">
+    <link rel="stylesheet" href="./stylesheets/article.css">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae628de6c5.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="center-logo-page">
+<body>
     <header>
-        <img src="JandT.png" id="logo" alt="Logo">
+        <img src="./img/JandT.png" id="logo">
     </header>
-    <main class="article-grid">
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="crabbing.html">Crabbing</a></li>
+            <li><a href="electrician.html" class="current">Electrician</a></li>
+            <li><a href="videogames.html">Video Games</a></li>
+            <li><a href="tvandmovies.html">TV and Movies</a></li>
+        </ul>
+    </nav>
+    <section id="s1">
+        <h1 class="heading">Yep, I'm a Working Dude</h1>
+        <p>I can't believe it's been over 20 years since I started working in the trade! I feel really blessed that
+            electrical has allowed me a decent living over the years.</p>
+        <p>In Washington state, we have different licenses for different types of electrical workers. I have an 01
+            License which allows me to work on any type of installation, from apartments and houses to commercial
+            and industrial buildings.</p>
+        <p>Indeed I have worked on many different projects. I have also had the privilege of running work as a
+            foreman. I ran a small boathouse job in Kenmore, a lighting retrofit project for a nursing home facility
+            locally in Bremerton, even a small piece of the Sound Transit Light Rail that goes from Seattle to
+            Bellevue! I was extremely proud to help install the electrical for some special roll up doors at Sea-Tac
+            Airport.</p>
+        <p>After giving God the credit for the ability to do this job, I also want to give a shout out to my union
+            <a href="https://ibew46.com" target="_blank">IBEW Local 46 </a>for finding good work for the membership
+            and the <a href="https://www.psejatc.org" target="_blank">Puget Sound Electrical Apprenticeship</a> for the
+            excellent training!
+        </p>
+        <p>"So why go back to school in computers," you may be thinking. I really want to get more skills in other
+            things so I don't have to be busting my hump slanging the tools in my 50's and 60's!</p>
         <br>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="crabbing.html">Crabbing</a></li>
-                <li><a href="electrician.html" class="current">Electrician</a></li>
-                <li><a href="videogames.html">Video Games</a></li>
-                <li><a href="tvandmovies.html">TV and Movies</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h1 class="heading">Yep, I'm a Working Dude</h1>
-            <img src="elec1.jpg" alt="snorklelift" class="articlepic">
-            <p>I can't believe it's been over 20 years since I started working in the trade! I feel really blessed that
-                electrical has allowed me a decent living over the years.</p>
-            <p>In Washington state, we have different licenses for different types of electrical workers. I have an 01
-                License which allows me to work on any type of installation, from apartments and houses to commercial
-                and industrial buildings.</p>
-            <p>Indeed I have worked on many different projects. I have also had the privilege of running work as a
-                foreman. I ran a small boathouse job in Kenmore, a lighting retrofit project for a nursing home facility
-                locally in Bremerton, even a small piece of the Sound Transit Light Rail that goes from Seattle to
-                Bellevue! I was extremely proud to help install the electrical for some special roll up doors at Sea-Tac
-                Airport.</p>
-            <img src="elec2.jpg" alt="light rail project">
-            <p>After giving God the credit for the ability to do this job, I also want to give a shout out to my union
-                <a href="https://ibew46.com" target="_blank">IBEW Local 46 </a>for finding good work for the membership
-                and <a href="https://www.psejatc.org" target="_blank">Puget Sound Electrical Apprenticeship </a>for the
-                excellent training!</p>
-        </article>
         <p><a href="#">Return to Top</a></p>
-    </main>
+    </section>
+    <aside id="leftaside">
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/elec1.jpg" alt="snorklelift">
+            </div>
+        </div>
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/elec2.jpg" alt="Light Rail">
+            </div>
+        </div>
+    </aside>
+    <aside id="rightaside">
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/elec3.jpg" alt="transformer">
+            </div>
+        </div>
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/elec4.jpg" id="elecpanel" alt="panel">
+                <p class="asidecap">Just a small taste of my neat handy work!</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; Copyright 2025 James Moore.</p>
+    </footer>
+    <p><a href="#">Return to Top</a></p>
     <footer>
         <p>&copy; Copyright 2025 James Moore.</p>
     </footer>

@@ -5,56 +5,72 @@
     <meta name="description" content="Video Games">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Games are Cool</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="JandT.png">
+    <title>Video Games Are Cool</title>
+    <link rel="stylesheet" href="./stylesheets/article.css">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae628de6c5.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="center-logo-page">
+<body>
     <header>
-        <img src="JandT.png" id="logo" alt="Logo">
+        <img src="./img/JandT.png" id="logo">
     </header>
-    <main class="article-grid">
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="crabbing.html">Crabbing</a></li>
+            <li><a href="electrician.html">Electrician</a></li>
+            <li><a href="videogames.html" class="current">Video Games</a></li>
+            <li><a href="tvandmovies.html">TV and Movies</a></li>
+        </ul>
+    </nav>
+    <section id="s1">
+        <h1 class="heading">Hey, Video Game Nerdy is Cool Too!</h1>
+        <p>I'm such a video game nerd, it's not even funny! I still remember my dad waiting in line at Toy's R Us to
+            get the original NES console that had the Super Mario Bros./Duck Hunt package and the Zapper gun. Man,
+            were those ever the days!</p>
+        <p>Growing up, I loved playing games at the arcade. Some of my arcade favorites when I was 10-14 years old
+            were the Street Fighter games (including the Marvel vs. Capcom series), the Mortal Kombat series, X-Men
+            (that big 6-player cabinet was pretty gnarly), The Simpsons 4-player cabinet, and any of the TMNT
+            4-player games! My piggy bank was always empty when I was younger.</p>
+        <p>I loved arcade games so much when I was younger, I figured out how to play all of my favorite ones on
+            emulators. Basically emulators are software programs that mimic the hardware of the console (or arcade
+            cabinet) you want to play and you can play those games on your computer if you have the game files.
+            There was even emulators that had a plugin that enabled online play, so you could compete worldwide to
+            exert your Street Fighter dominance!</p>
         <br>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="crabbing.html">Crabbing</a></li>
-                <li><a href="electrician.html">Electrician</a></li>
-                <li><a href="videogames.html" class="current">Video Games</a></li>
-                <li><a href="tvandmovies.html">TV and Movies</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h1 class="heading">Hey, Video Game Nerdy is Cool Too!</h1>
-            <img src="vg1.jpg" alt="Mario and Duck Hunt" class="articlepic" id="vg1-pic">
-            <p>I'm such a video game nerd, it's not even funny! I still remember my dad waiting in line at Toy's R Us to
-                get the original NES console that had the Super Mario Bros./Duck Hunt package and the Zapper gun. Man,
-                were those ever the days!</p>
-            <p>Growing up, I loved playing games at the arcade. Some of my arcade favorites when I was 10-14 years old
-                were the Street Fighter games (including the Marvel vs. Capcom series), the Mortal Kombat series, X-Men
-                (that big 6-player cabinet was pretty gnarly), The Simpsons 4-player cabinet, and any of the TMNT
-                4-player games! My piggy bank was always empty when I was younger.</p>
-            <p>I loved arcade games so much when I was younger, I figured out how to play all of my favorite ones on
-                emulators. Basically emulators are software programs that mimic the hardware of the console (or arcade
-                cabinet) you want to play and you can play those games on your computer if you have the game files.
-                There was even emulators that had a plugin that enabled online play, so you could compete worldwide to
-                exert your Street Fighter dominance!</p>
-            <img src="vg2.jpg" alt="Mario Kart World">
-            <p>Now, that I'm older, I have gotten some of my video game nerdiness somewhat under control. But I still
-                like to play Nintendo Switch 2 primarily. I enjoy playing Donkey Kong Bananza with my daughter and
-                exerting my Mario Kart World dominance on friends and family! As a family we like all things Nintendo so
-                much that we've gone quite a few times to Nintendo World at Universal Studios, Hollywood.</p>
-            <p>It should go without saying that I do not own the images on this page, nor should it be construed that
-                I'm trying to profit off of anything that doesn't belong to me, since the pictures are the property of
-                <a href="https://www.nintendo.com" target="_blank">Nintendo.</a> Since their stuff is pretty sweet, you
-                should definitely give them a click anyways.
-            </p>
-        </article>
         <p><a href="#">Return to Top</a></p>
-    </main>
+    </section>
+    <aside id="leftaside">
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/vg1.jpg" id="nes" alt="Mario and Duck Hunt">
+            </div>
+        </div>
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/vg2.jpg" alt="Mario Kart World">
+            </div>
+        </div>
+    </aside>
+    <aside id="rightaside">
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/vg3.jpg" id="mk" alt="Mortal Kombat">
+                <p class="asidecap">TEST YOUR MIGHT!!!</p>
+            </div>
+        </div>
+        <div class="imgwrap">
+            <div class="imgclip">
+                <img src="./img/vg4.jpg" alt="Street Fighter">
+            </div>
+        </div>
+    </aside>
     <footer>
-        <p>&copy; Copyright 2025 James Moore. All the text and coding that's not related to the images is ALL mine.</p>
+        <p>&copy; Copyright 2025 James Moore.</p>
     </footer>
 </body>
 
